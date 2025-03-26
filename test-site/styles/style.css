@@ -1,0 +1,42 @@
+html {
+  font-size: 10px; /* px 表示“像素（pixel）”: 基础字号为 10 像素 */
+  font-family: "Open Sans", sans-serif; /* 这应该是你从 Google Fonts 得到的其余输出。 */
+  background-color: lightblue;
+}
+
+h1 {
+  margin: 0; /*消除页面顶部间隙*/
+  padding: 20px 0; /*上下、左右内边距*/
+  color: #00539f;
+  font-size: 60px;
+  text-align: center;
+  text-shadow: 3px 3px 5px black;
+  /* 第一个像素值设置阴影与文本的水平偏移量：阴影水平方向移动的距离（向右为正值）。
+    第二个像素值设置阴影与文本的垂直偏移量：阴影垂直方向移动的距离（向下为正值）。
+    第三个像素值设置阴影的模糊半径。值越大产生的阴影越模糊。
+    第四个值设置阴影的基色。 */
+}
+
+p,
+li {
+  font-size: 16px;
+  line-height: 2;
+  letter-spacing: 1px;
+}
+
+body {
+  width: 600px; /*  强制文档体永远保持 600 像素宽。 */
+  margin: 0 auto; /*外边距，第一个值影响元素的上下方向，第二个值影响左右方向*/
+  /* auto 是一个特殊的值，它将可用的水平空间平均分配给左右边 */
+  background-color: #ff9500;
+  padding: 0 20px 20px 20px; /*上右下左内边距*/
+  border: 5px solid black; /*文档体的纯黑边框*/
+}
+
+img {
+  width: 500px;
+  display: block;
+  /* <body> 元素是块级元素，而图片是行级元素，页面上的其他元素会尊重块级元素的外边距。 */
+  /* 所以为了使图像有外边距，我们必须使用 display: block 给予其块级行为。 */
+  margin: 20px auto;
+}
